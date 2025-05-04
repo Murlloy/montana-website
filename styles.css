@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+strong {
+    color: #FF6231;
+}
+
 h1 {
     font-size: 96px;
     font-family: "Inter", sans-serif;
@@ -25,6 +29,8 @@ main h3 {
     margin-bottom: -50px;
 }
 
+/* Inicio Header */
+
 header {
     display: flex;
     align-items: center;
@@ -33,6 +39,7 @@ header {
     background: rgba(0, 0, 0, 0.21);
     backdrop-filter: blur(10px);
     width: 100%;
+    position: relative;
 }
 
 header img {
@@ -44,11 +51,20 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header nav a {
     color: white;
     text-decoration: none;
+    transition: 0.2s all ease;
+}
+
+header nav a:hover {
+    color: #FF6231;
+    text-decoration: underline;
 }
 
 header input {
@@ -60,6 +76,9 @@ header input {
     border-radius: 5px;
 
 }
+
+/* Fim Header */
+
 
 main {
     display: flex;
@@ -91,27 +110,126 @@ main article button {
     backdrop-filter: blur(10px);
     border: none;
     color: white;
-    padding: 10px 60px;
+    padding: 20px 60px;
     border-radius: 10px;
     border: rgb(150, 150, 150) 1px solid;
+    transition: 0.6s all ease;
+    cursor: pointer;
+}
+
+main article button:hover {
+    background: rgba(255, 255, 255, 0.30);
 }
 
 .to-do {
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 40px;
-    width: 90%;
 }
 
 .to-do article {
      display: flex;
-     padding: 40px;
+     padding: 20px;
 }
 
 .to-do img {
-    flex: 1 1 1;
+    max-width: 50%;
+    margin: 20px;
 }
 
+
+.montana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 5%;
+}
+
+.montana article {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.montana button {
+    color: white;
+    background-color: #FF6231;
+    border-radius: 5px;
+    padding: 20px 60px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+}
+
+
+/* Inicio Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px;
+    align-items: start;
+    margin-top: 7%;
+}
+
+footer article {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: start;
+    gap: 20px;
+}
+
+footer section p {
+    width: 150%;
+    font-size: 18px;
+}
+
+footer input {
+    width: 150%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #FF8F6C;
+    outline: none;
+}
+
+footer button {
+    background-color: #FF6231;
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+footer img {
+    width: 150px;
+}
 
